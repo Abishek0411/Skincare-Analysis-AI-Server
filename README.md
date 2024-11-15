@@ -23,4 +23,28 @@ This repository contains the backend server and machine learning model for the A
    
 2. **Create a Virtual Environment**:
    ```bash
-   python port1717.py
+   python3 -m venv venv
+   source venv/bin/activate
+   
+2. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+
+2. **Run the Flask Server**:
+   ```bash
+   flask run
+
+## API Endpoints
+- POST /upload_image: Accepts an image file for analysis.
+- POST /get_recommendations: Returns skincare recommendations based on image analysis results.
+
+## Future Enhancements
+- Integrate additional skincare concerns such as pigmentation analysis.
+- Improve model accuracy for acne classification.
+
+## Front-End Link
+Check out the Front-end Repository for the mobile app interface and user interactions:
+https://github.com/Abishek0411/Skincare-Analysis-Frontend
+
+
+
